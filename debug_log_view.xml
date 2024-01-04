@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+    >
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/debugLogToolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="#0099ff"
+    android:elevation="4dp"
+    app:title="Mule Log"
+    app:navigationIcon="?attr/homeAsUpIndicator"
+
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+</androidx.appcompat.widget.Toolbar>
+
+<ListView
+    android:id="@+id/debugLogListView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

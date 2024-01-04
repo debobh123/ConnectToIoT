@@ -1,0 +1,29 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/sstransfermode" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Click on the 'Data Transfer mode' option on the settings screen to choose between equipment only\n(meaning hotspot will be ON and the app will seek machine connections ony).\nServer Only (meaning, WiFi will be ON and app will attempt to send the received files to destinationservers on availability of network)\nand\t\t 'Equipment and Server Mode'\n (meaning, the app would smart detect received files to destination servers upon network availability).\n\n\nWe recommend you to keep this setting to 'Equipment and Server mode'\tso that you do not need to do the operations manually and let the app handle things on its own.\t\t\t\t>>" />
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="mod"
+        android:title="test" />
+    <EditTextPreference
+        android:defaultValue="@string/portnumber_default"
+        android:key="portNum"
+        android:title="@string/portnumber_label" />
+    <Preference
+        android:key="chrootDir"
+        android:title="@string/chroot_label" />
+
+    <CheckBoxPreference
+        android:defaultValue="@string/wakelock_default"
+        android:key="stayAwake"
+        android:title="@string/wakelock_label" />
+</PreferenceScreen>

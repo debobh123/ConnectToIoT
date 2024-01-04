@@ -1,0 +1,28 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        app:srcCompat="@drawable/sandvik_symbol_black_rgb300" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1.\tMake sure you have turned off battery optimization for this application in your system settings.\n\n2.\tAllow 'Write settings' for the app in your system settings.\n\n3.\tSet your personal hotspot as below:\n\n\t\t\t\t\tssid:\tSandvik\n\t\t\t\tPassword:\t12345678\n\n(or make sure it is same as configured in the machine DCU/VCM).\t\t\t>>" />
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

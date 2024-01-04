@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="none"
+        android:title="test" />
+
+    <PreferenceCategory
+        android:key="ftp"
+        android:title="FTP">
+        <SwitchPreferenceCompat
+            android:key="running_switch"
+            android:title="@string/running_label"
+            android:summary="@string/running_summary_stopped"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+        <PreferenceCategory
+            android:key="settings"
+            android:title="@string/settings_label">
+
+            <ListPreference
+                android:title="Data Transfer Mode"
+                android:summary="%s"
+                android:key="transfer_mode"
+                android:defaultValue="0"
+                android:entries="@array/transferModes"
+                android:entryValues="@array/transferModeValues" />
+
+            <Preference
+                android:key="login"
+                android:title="@string/loginsettings_label"
+                android:summary=""
+                android:fragment="com.sandvik.databearerdev.gui.settings.LoginFragment"/>
+            <Preference
+                android:key="advanced_settings"
+                android:title="@string/advancedsettings_label"
+                android:fragment="com.sandvik.databearerdev.gui.settings.AdvancedSettingsFragment"/>
+
+      <!--Sooner or later, we have to remove hotspot settings-->
+            <PreferenceCategory
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:key="hotspot_set"
+                android:title="@string/hotspotsettings_label"
+                android:summary="" >
+                <PreferenceCategory
+                    android:key="hotspot"
+                    android:title="@string/hotspot_label" >
+                    <EditTextPreference
+                        android:defaultValue="@string/ssid_default"
+                        android:key="ssid"
+                        android:title="@string/ssid_label" />
+                    <EditTextPreference
+                        android:defaultValue="@string/wpa_default"
+                        android:key="wpa"
+                        android:title="@string/wpa_label" />
+                    <ListPreference
+                        android:title="@string/channel_label"
+                        android:summary="%s"
+                        android:key="wifi_channel"
+                        android:defaultValue="0"
+                        android:entries="@array/wifiChannelLabels"
+                        android:entryValues="@array/wifiChannelValues" />
+                </PreferenceCategory>
+            </PreferenceCategory>
+        </PreferenceCategory>
+    <PreferenceCategory
+        android:key="server"
+        android:title="SERVER">
+        <ListPreference
+            android:title="Server type"
+            android:summary=""
+            android:key="server_type"
+            android:defaultValue="@string/server_type_default"
+            android:entries="@array/serverTypes"
+            android:entryValues="@array/serverTypeValues" />
+        <EditTextPreference
+            android:defaultValue="@string/server_url_default"
+            android:summary=""
+            android:key="server_url"
+            android:title="Server URL" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="ABOUT"
+        >
+        <Preference
+            android:key="pref_about_build"
+            android:title="Application version"
+            android:summary="v3.1.0" />
+    </PreferenceCategory>
+
+
+
+
+
+</PreferenceScreen>

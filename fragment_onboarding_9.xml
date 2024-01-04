@@ -1,0 +1,40 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView333"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        app:srcCompat="@drawable/sandvik_symbol_black_rgb300" />
+
+    <TextView
+        android:id="@+id/textView155"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center|center_vertical"
+        android:padding="10dp"
+        android:text="Sandvik DataBearer 3.1.0"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView166"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Thanks for completing the guide.\n\nYou are all set to use the app!\n\nFor further queries, reachout to us on \n\t\t\t\t\tMySandvik Support\t\t\n\n\n\n(Click on the 'skip' button below to exit this guide.\n\n\nYou can always access it again from your main screen menu.)" />
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
